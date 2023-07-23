@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Bhromaon</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/reset.css" />
@@ -12,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Bhromaon</title>
+    <link rel="icon" type="image/x-icon" href="/assets/globe.ico" />
   </head>
   <body>
     <header>
@@ -27,9 +28,11 @@
               class="bar"
               type="text"
               placeholder="Search your travel destination"
+              minlength="1"
+              autocomplete="off"
             />
             <button class="search" type="submit">
-              <span class="search__text">SEARCH</span>
+              <span class="search__text">Search</span>
               <svg
                 width="22"
                 height="22"
@@ -71,15 +74,15 @@
     <nav class="nav-bar">
       <div class="nav-bar__title">BHROMAON</div>
       <div class="nav-bar__links">
-        <a class="nav-bar__link" href="">WHO WE ARE</a>
-        <a class="nav-bar__link" href="">WHAT WE DO</a>
-        <a class="nav-bar__link" href="">TRAVEL WITH US</a>
-        <a class="nav-bar__link" href="">CONTACT US</a>
+        <a class="nav-bar__link" href="#why-us">WHO WE ARE</a>
+        <a class="nav-bar__link" href="#travel">WHAT WE DO</a>
+        <a class="nav-bar__link" href="#tourist">TRAVEL WITH US</a>
+        <a class="nav-bar__link" href="#footer">CONTACT US</a>
       </div>
     </nav>
     <!-- sticky problem -->
     <main>
-      <section class="choose-us-section">
+      <section class="choose-us-section" id="why-us">
         <div class="choose-us-section__box">
           <span class="choose-us-section__box__title">Why Choose Us</span>
           <span class="choose-us-section__box__desc"
@@ -205,7 +208,7 @@
           </div>
         </div>
       </section>
-      <section class="house-section">
+      <section class="house-section" id="travel">
         <div class="general-section__box">
           <div class="general__box__country">Spain</div>
           <div class="general__box__title">Grand Spain Madrid</div>
@@ -263,7 +266,7 @@
           </button>
         </div>
       </section>
-      <section class="tourist-section">
+      <section class="tourist-section" id="tourist">
         <div class="tourist-section__title">What Our Tourist Say</div>
         <div class="tourist-section__box">
           <div class="tourist-section__box__img">
@@ -296,7 +299,27 @@
       </section>
     </main>
     <footer>
-      <section class="footer"></section>
+      <section class="footer" id="footer">
+        <span class="footer__title">Bhromaon</span>
+        <span class="footer__slogan">Safe Travel Anywhere</span>
+        <div class="social-medias">
+          <a href=""
+            ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
+          ></a>
+          <a href=""
+            ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+          ></a>
+          <a href=""
+            ><i class="fa-brands fa-linkedin-in" style="color: #496bfe"></i
+          ></a>
+          <a href=""
+            ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+          ></a>
+          <a href=""
+            ><i class="fa-brands fa-pinterest" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
