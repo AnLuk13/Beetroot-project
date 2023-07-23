@@ -92,9 +92,35 @@ header .welcome-section {
 .nav-bar {
   width: 1770px;
   height: 83px;
+  padding: 0 334px;
   background-color: #5474fd;
   position: sticky;
-  top: 0; }
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; }
+  .nav-bar .nav-bar__title {
+    color: #fff;
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase; }
+  .nav-bar .nav-bar__links {
+    display: flex;
+    gap: 26px; }
+    .nav-bar .nav-bar__links .nav-bar__link {
+      color: #fff;
+      font-family: Aleo;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      /* 185.714% */
+      text-transform: uppercase;
+      text-decoration: none; }
 
 .choose-us-section {
   width: 1770px;
