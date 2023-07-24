@@ -1,18 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+header .welcome-section .search-bar, header .welcome-section .search-bar .search, .choose-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header .welcome-section, .options-section, .options-section .relative, .options-section .relative .options-section__box .options-section__container, .tourist-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+header .welcome-section .welcome-section__text {
+  display: flex;
+  flex-direction: column; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 83px; }
+
 header .welcome-section {
   width: 1773px;
   height: 737px;
   background: url(/assets/welcome-background.png);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 48px; }
   header .welcome-section .welcome-section__text {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     gap: 11px; }
@@ -20,8 +33,8 @@ header .welcome-section {
       color: #fff;
       text-align: center;
       font-family: Josefin Sans;
-      font-size: 48px;
       font-style: normal;
+      font-size: 48px;
       font-weight: 700;
       letter-spacing: 4.8px;
       text-transform: uppercase; }
@@ -29,61 +42,93 @@ header .welcome-section {
       color: #fff;
       text-align: center;
       font-family: Josefin Sans;
-      font-size: 22px;
       font-style: normal;
+      font-size: 22px;
       font-weight: 400;
       letter-spacing: 6.82px; }
-  header .welcome-section .search-bar {
-    display: flex;
-    align-items: center; }
-    header .welcome-section .search-bar .bar {
-      width: 503px;
-      height: 63px;
-      background-color: #fff;
-      font-size: 38px; }
-      header .welcome-section .search-bar .bar::placeholder {
-        color: #999;
-        text-align: center;
-        font-family: Josefin Sans;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 2.8px; }
-    header .welcome-section .search-bar .search {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      width: 153px;
-      height: 60px;
-      flex-shrink: 0;
-      background-color: #5474fd;
-      border: 2px solid #fff;
-      box-sizing: content-box; }
-      header .welcome-section .search-bar .search .search__text {
-        color: #fff;
-        text-align: center;
-        font-family: Aleo;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 1.4px;
-        text-transform: uppercase; }
+  header .welcome-section .search-bar .bar {
+    width: 503px;
+    height: 66px;
+    background-color: #fff;
+    font-size: 38px;
+    padding-bottom: 7px;
+    box-sizing: border-box; }
+    header .welcome-section .search-bar .bar:focus {
+      border: 5px solid #5474fd; }
+    header .welcome-section .search-bar .bar::-webkit-input-placeholder {
+      color: #999;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 2.8px; }
+    header .welcome-section .search-bar .bar::-moz-placeholder {
+      color: #999;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 2.8px; }
+    header .welcome-section .search-bar .bar:-ms-input-placeholder {
+      color: #999;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 2.8px; }
+    header .welcome-section .search-bar .bar::-ms-input-placeholder {
+      color: #999;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 2.8px; }
+    header .welcome-section .search-bar .bar::placeholder {
+      color: #999;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 2.8px; }
+  header .welcome-section .search-bar .search {
+    gap: 15px;
+    width: 153px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #5474fd;
+    border: 2px solid #fff;
+    box-sizing: content-box; }
+    header .welcome-section .search-bar .search .search__text {
+      color: #fff;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: Aleo;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      vertical-align: bottom; }
   header .welcome-section .scroll-down {
     display: flex;
     flex-direction: column;
     align-items: center; }
     header .welcome-section .scroll-down a {
       color: #fff;
+      text-align: center;
       font-family: Josefin Sans;
-      font-size: 48px;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 18px;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 26px;
       /* 185.714% */
       letter-spacing: 2.8px;
@@ -94,6 +139,7 @@ header .welcome-section {
   height: 83px;
   padding: 0 334px;
   background-color: #5474fd;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
@@ -103,9 +149,10 @@ header .welcome-section {
   z-index: 4; }
   .nav-bar .nav-bar__title {
     color: #fff;
+    text-align: center;
     font-family: Josefin Sans;
-    font-size: 24px;
     font-style: normal;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 2.4px;
     text-transform: uppercase; }
@@ -114,12 +161,12 @@ header .welcome-section {
     gap: 26px; }
     .nav-bar .nav-bar__links .nav-bar__link {
       color: #fff;
-      font-family: Aleo;
-      font-size: 14px;
+      text-align: center;
+      font-family: Josefin Sans;
       font-style: normal;
+      font-size: 14px;
       font-weight: 400;
-      line-height: 26px;
-      /* 185.714% */
+      font-family: Aleo;
       text-transform: uppercase;
       text-decoration: none; }
 
@@ -127,9 +174,6 @@ header .welcome-section {
   width: 1770px;
   height: 685px;
   background: url(/assets/choose-us.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 110px; }
   .choose-us-section .choose-us-section__box {
     display: flex;
@@ -137,19 +181,22 @@ header .welcome-section {
     gap: 50px; }
     .choose-us-section .choose-us-section__box .choose-us-section__box__title {
       color: #fff;
-      font-family: Aleo;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 400; }
-    .choose-us-section .choose-us-section__box .choose-us-section__box__desc {
-      width: 560px;
-      color: #e8e8e8;
+      text-align: center;
       font-family: Josefin Sans;
-      font-size: 16px;
       font-style: normal;
+      font-size: 36px;
       font-weight: 400;
-      line-height: 26px;
-      /* 162.5% */
+      text-align: left;
+      font-family: Aleo; }
+    .choose-us-section .choose-us-section__box .choose-us-section__box__desc {
+      color: #e8e8e8;
+      text-align: center;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-size: 16px;
+      font-weight: 400;
+      width: 560px;
+      text-align: left;
       letter-spacing: 1.6px; }
   .choose-us-section .choose-us-section__images {
     width: 440px;
@@ -167,44 +214,38 @@ header .welcome-section {
 .options-section {
   width: 1770px;
   height: 340px;
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative; }
-  .options-section .mask {
-    position: absolute;
-    top: 80px;
-    background-color: #333;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    z-index: 2; }
-  .options-section .svg {
-    position: absolute;
-    top: 22px;
-    left: 494px;
-    z-index: 1; }
-  .options-section .options-section__box {
-    z-index: 2;
-    display: flex;
-    gap: 105px; }
-    .options-section .options-section__box .options-section__container {
-      width: 353px;
-      height: 163px;
+  background-color: #333; }
+  .options-section .relative {
+    position: relative; }
+    .options-section .relative .mask {
+      position: absolute;
+      top: 5px;
+      background-color: #333;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      z-index: 2; }
+    .options-section .relative .svg {
+      position: absolute;
+      top: -60px;
+      left: 240px;
+      z-index: 1; }
+    .options-section .relative .options-section__box {
+      z-index: 2;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 19px; }
-      .options-section .options-section__box .options-section__container .options-section__container__text {
-        color: #e8e8e8;
-        text-align: center;
-        font-family: Aleo;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400; }
+      gap: 105px; }
+      .options-section .relative .options-section__box .options-section__container {
+        width: 353px;
+        height: 163px;
+        gap: 19px; }
+        .options-section .relative .options-section__box .options-section__container .options-section__container__text {
+          color: #e8e8e8;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-size: 36px;
+          font-weight: 400;
+          font-family: Aleo; }
 
 .house-section {
   width: 1770px;
@@ -227,30 +268,30 @@ header .welcome-section {
   padding-left: 32px; }
   .general-section__box .general__box__country {
     color: #e8e8e8;
+    text-align: center;
     font-family: Josefin Sans;
-    font-size: 20px;
     font-style: normal;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 26px;
-    /* 130% */
     letter-spacing: 1.5px;
     margin-bottom: 23px; }
   .general-section__box .general__box__title {
     color: #fff;
+    text-align: center;
     font-family: Josefin Sans;
-    font-size: 20px;
     font-style: normal;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 26px;
-    /* 130% */
     text-transform: uppercase;
     margin-bottom: 13px; }
   .general-section__box .general__box__desc {
     color: #e8e8e8;
+    text-align: center;
     font-family: Josefin Sans;
-    font-size: 16px;
     font-style: normal;
+    font-size: 16px;
     font-weight: 400;
+    text-align: left;
     margin-bottom: 46px; }
 
 .button {
@@ -264,16 +305,16 @@ header .welcome-section {
     opacity: 0.9; }
 
 .button-text {
-  top: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  top: 22px;
   left: 60px;
   position: absolute;
-  color: #fff;
   font-family: Aleo;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  /* 162.5% */
   letter-spacing: 1.2px;
   text-transform: uppercase; }
 
@@ -298,18 +339,15 @@ header .welcome-section {
   width: 1770px;
   height: 731px;
   background: url(/assets/tourist.png);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 91px; }
   .tourist-section .tourist-section__title {
     color: #fff;
     text-align: center;
-    font-family: Aleo;
-    font-size: 36px;
+    font-family: Josefin Sans;
     font-style: normal;
-    font-weight: 400; }
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Aleo; }
   .tourist-section .tourist-section__box {
     width: 1110px;
     height: 287px;
@@ -329,26 +367,163 @@ header .welcome-section {
       gap: 7px; }
       .tourist-section .tourist-section__box .tourist-section__box__desc .tourist-section__box__desc__title {
         color: #fefefe;
+        text-align: center;
         font-family: Josefin Sans;
-        font-size: 20px;
         font-style: normal;
+        font-size: 20px;
         font-weight: 400;
-        line-height: 26px;
-        /* 130% */
         text-transform: uppercase;
+        text-align: left;
         margin-top: 49px;
         margin-left: 62px; }
       .tourist-section .tourist-section__box .tourist-section__box__desc .tourist-section__box__desc__text {
-        width: 581px;
         color: #e8e8e8;
+        text-align: center;
         font-family: Josefin Sans;
-        font-size: 16px;
         font-style: normal;
+        font-size: 16px;
         font-weight: 400;
+        width: 581px;
+        text-align: left;
         line-height: 26px;
         padding-left: 28px; }
 
 .footer {
   width: 1770px;
   height: 271px;
-  background-color: #232323; }
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px; }
+  .footer .footer__title {
+    color: #fff;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+    margin-top: 122px; }
+  .footer .footer__slogan {
+    color: #fff;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px; }
+  .footer .social-medias {
+    display: flex;
+    gap: 24px; }
+
+@media screen and (max-width: 1350px) {
+  header .welcome-section {
+    max-width: 100%;
+    max-height: 500px; }
+    header .welcome-section .search-bar {
+      width: 700px; }
+      header .welcome-section .search-bar .bar {
+        width: 50%;
+        height: 42px;
+        padding-bottom: 15px; }
+        header .welcome-section .search-bar .bar::-webkit-input-placeholder {
+          color: #999;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: 2.8px; }
+        header .welcome-section .search-bar .bar::-moz-placeholder {
+          color: #999;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: 2.8px; }
+        header .welcome-section .search-bar .bar:-ms-input-placeholder {
+          color: #999;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: 2.8px; }
+        header .welcome-section .search-bar .bar::-ms-input-placeholder {
+          color: #999;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: 2.8px; }
+        header .welcome-section .search-bar .bar::placeholder {
+          color: #999;
+          text-align: center;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: 2.8px; }
+      header .welcome-section .search-bar .search {
+        max-width: 25%;
+        height: 36px; }
+  .nav-bar {
+    max-width: 100%;
+    padding: 30px; }
+  .choose-us-section {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    gap: 50px; }
+    .choose-us-section .choose-us-section__box {
+      align-items: center; }
+    .choose-us-section .choose-us-section__images {
+      align-items: center;
+      gap: 30px; }
+      .choose-us-section .choose-us-section__images .choose-us-section__image:first-child {
+        align-self: center; }
+  .options-section {
+    max-width: 100%; }
+    .options-section .relative .svg {
+      top: -40px;
+      width: 45%;
+      left: 344px; }
+    .options-section .relative .options-section__box {
+      width: 70%; }
+      .options-section .relative .options-section__box .options-section__container .options-section__container__text {
+        font-size: 20px; }
+  .house-section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; }
+  .mountain-section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; }
+  .tourist-section {
+    max-width: 100%; }
+    .tourist-section .tourist-section__box {
+      width: 80%;
+      height: auto; }
+      .tourist-section .tourist-section__box .tourist-section__box__desc {
+        height: auto; }
+        .tourist-section .tourist-section__box .tourist-section__box__desc .tourist-section__box__desc__text {
+          padding: 0 15px 10px;
+          width: auto; }
+      .tourist-section .tourist-section__box .tourist-section__box__img {
+        height: auto;
+        flex-shrink: 1;
+        background-size: cover; }
+  .footer {
+    max-width: 100%; } }
