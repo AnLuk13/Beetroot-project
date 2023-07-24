@@ -104,7 +104,6 @@ header {
         gap: 15px;
         width: 153px;
         height: 60px;
-        flex-shrink: 0;
         background-color: #5474fd;
         border: 2px solid #fff;
         box-sizing: content-box;
@@ -302,7 +301,6 @@ header {
 .button {
   width: 228px;
   height: 63px;
-  flex-shrink: 0;
   background-color: #5474fd;
   padding: 0;
   position: relative;
@@ -553,7 +551,6 @@ header {
 
       .tourist-section__box__img {
         height: auto;
-        flex-shrink: 1;
         background-size: cover;
       }
     }
