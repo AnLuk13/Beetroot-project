@@ -421,7 +421,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (min-width: 811px) and (max-width: 1350px) {
   header {
     .welcome-section {
       max-width: 100%;
@@ -550,6 +550,153 @@ header {
       }
 
       .tourist-section__box__img {
+        height: auto;
+        background-size: cover;
+      }
+    }
+  }
+
+  .footer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  header {
+    .welcome-section {
+      max-width: 100%;
+      max-height: 500px;
+
+      .search-bar {
+        width: 700px;
+        .bar {
+          width: 50%;
+          height: 42px;
+          padding-bottom: 15px;
+
+          &::-webkit-input-placeholder {
+            @include font($color: #999, $size: 17px, $weight: 400);
+            letter-spacing: 2.8px;
+          }
+
+          &::-moz-placeholder {
+            @include font($color: #999, $size: 17px, $weight: 400);
+            letter-spacing: 2.8px;
+          }
+
+          &:-ms-input-placeholder {
+            @include font($color: #999, $size: 17px, $weight: 400);
+            letter-spacing: 2.8px;
+          }
+
+          &::-ms-input-placeholder {
+            @include font($color: #999, $size: 17px, $weight: 400);
+            letter-spacing: 2.8px;
+          }
+
+          &::placeholder {
+            @include font($color: #999, $size: 17px, $weight: 400);
+            letter-spacing: 2.8px;
+          }
+        }
+
+        .search {
+          max-width: 25%;
+          height: 36px;
+        }
+      }
+    }
+  }
+
+  .nav-bar {
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .choose-us-section {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    gap: 30px;
+
+    .choose-us-section__box {
+      align-items: center;
+    }
+
+    .choose-us-section__images {
+      align-items: center;
+      gap: 10px;
+
+      .choose-us-section__image:first-child {
+        align-self: center;
+      }
+    }
+  }
+
+  .options-section {
+    height: auto;
+    max-width: 100%;
+
+    .relative {
+      .svg {
+        display: none;
+      }
+      .options-section__box {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+
+        .options-section__container {
+          .options-section__container__text {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .house-section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .mountain-section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .tourist-section {
+    max-width: 100%;
+    padding: 30px 0 30px;
+    gap: 50px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .tourist-section__box {
+      flex-wrap: wrap;
+      width: 60%;
+      height: auto;
+
+      .tourist-section__box__desc {
+        height: auto;
+
+        .tourist-section__box__desc__text {
+          padding: 0 15px 10px;
+          width: auto;
+        }
+      }
+
+      .tourist-section__box__img {
+        width: 100%;
         height: auto;
         background-size: cover;
       }
